@@ -1,0 +1,101 @@
+dependencies:
+- app_id: ZA7EZSU2DX2T34FZ
+  version: {dev: false}
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: true}
+startup: {type: form, module: money_dashboard}
+package_name: Material_Design_3
+allow_embedding: false
+name: Material Design 3
+runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
+metadata: {}
+startup_form: null
+db_schema:
+  table_4:
+    title: Table 4
+    client: none
+    server: full
+    columns: []
+  goals:
+    title: goals
+    client: full
+    server: full
+    columns:
+    - name: user_email
+      admin_ui: {width: 200}
+      type: string
+    - name: goal_name
+      admin_ui: {width: 200}
+      type: string
+    - name: goal_total
+      admin_ui: {width: 200}
+      type: number
+    - name: goal_saved_sofar
+      admin_ui: {width: 200}
+      type: number
+    - name: percentage
+      admin_ui: {width: 200}
+      type: number
+  table_6:
+    title: Table 6
+    client: none
+    server: full
+    columns: []
+  user:
+    title: user
+    client: full
+    server: full
+    columns:
+    - name: email
+      admin_ui: {width: 200}
+      type: string
+    - name: money
+      admin_ui: {width: 200}
+      type: number
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+    - name: profile_picture
+      admin_ui: {width: 200}
+      type: media
+    - name: monthly_income
+      admin_ui: {width: 200}
+      type: number
+  table_7:
+    title: Table 7
+    client: none
+    server: full
+    columns: []
+  table_5:
+    title: Table 5
+    client: none
+    server: full
+    columns: []
+  table_8:
+    title: Table 8
+    client: none
+    server: full
+    columns: []
+  table_9:
+    title: Table 9
+    client: none
+    server: full
+    columns: []
+  data:
+    title: data
+    client: none
+    server: full
+    columns:
+    - name: Category
+      admin_ui: {width: 200}
+      type: string
+    - name: amount
+      admin_ui: {width: 200}
+      type: number
+    - name: date
+      admin_ui: {width: 200}
+      type: date
+uplink_visible: true
+renamed: true
