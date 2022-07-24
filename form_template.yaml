@@ -1,0 +1,301 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_2
+    layout_properties: {grid_position: 'YYWXCO,YTCFNW'}
+    components:
+    - type: Button
+      properties: {role: raised, align: left, tooltip: '', border: '', enabled: true,
+        foreground: '#00BCAD', visible: true, text: '', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: 'fa:arrow-circle-o-left'}
+      name: button_3
+      layout_properties: {grid_position: 'IMYCZT,JSVORO'}
+      event_bindings: {click: button_3_click}
+    - type: Button
+      properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
+        foreground: '#347893', visible: true, text: View Monthly Spending, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: button_2
+      layout_properties: {grid_position: 'IMYCZT,ZSSRPT'}
+      event_bindings: {click: button_2_click}
+    - type: Button
+      properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
+        foreground: '#347893', visible: true, text: View Yearly Spending, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: button_1
+      layout_properties: {grid_position: 'KVBUER,BRVGCX'}
+      event_bindings: {click: button_1_click}
+    - type: ColumnPanel
+      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+        spacing_below: small, background: ''}
+      name: card_1
+      layout_properties: {grid_position: 'YGDPUO,QCUSRF'}
+      components:
+      - type: Label
+        properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '#69A6D1',
+          visible: true, text: Your Yearly Spending (Since January), font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '', bold: true, underline: false, icon: ''}
+        name: label_1
+        layout_properties: {grid_position: 'MZREGS,KIUGSE'}
+      - type: Plot
+        properties: {spacing_above: small, spacing_below: small, height: '300', visible: true,
+          tooltip: '', interactive: true}
+        name: plot_1
+        layout_properties: {grid_position: 'JMZMUP,BPAMOS'}
+      - type: ColumnPanel
+        properties: {role: card, col_widths: '{}'}
+        name: card_4
+        layout_properties: {grid_position: 'JMZMUP,JUMGAB OZGCCP,QXZMCP'}
+        components:
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+            visible: true, text: 'Your Total Income This Year:', font_size: null,
+            font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '', bold: false, underline: false, icon: ''}
+          name: label_2
+          layout_properties: {grid_position: 'AKYRFL,DGGEDH'}
+        - type: Label
+          properties: {}
+          name: label_3
+          layout_properties: {grid_position: 'NNDWRS,AFEHFP'}
+      - type: ColumnPanel
+        properties: {role: card, col_widths: '{}'}
+        name: card_5
+        layout_properties: {grid_position: 'JMZMUP,JUMGAB WCORYE,AWHEEP'}
+        components:
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+            visible: true, text: 'Your Total Saving This Year:', font_size: null,
+            font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '', bold: false, underline: false, icon: ''}
+          name: label_6
+          layout_properties: {grid_position: 'TRURTI,ODWQCK'}
+        - type: Label
+          properties: {}
+          name: label_7
+          layout_properties: {grid_position: 'PJIDVU,WMLMNV'}
+      - type: ColumnPanel
+        properties: {role: card, col_widths: '{}'}
+        name: card_3
+        layout_properties: {grid_position: 'DHWASV,CLNFXR'}
+        components:
+        - type: Label
+          properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '#69A6D1',
+            visible: true, text: Predictions and Insights, font_size: null, font: '',
+            spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+            background: '', bold: true, underline: false, icon: ''}
+          name: label_15
+          layout_properties: {grid_position: 'POPBDV,VCACBO'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#355C7D',
+            visible: true, text: 'At this rate, here''s what your networth will be
+              in:', font_size: null, font: '', spacing_above: small, icon_align: left,
+            spacing_below: small, italic: false, background: '', bold: false, underline: false,
+            icon: ''}
+          name: label_8
+          layout_properties: {grid_position: 'NXSUAD,RMBGMC'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#9C89FF',
+            visible: true, text: '1 Year: ', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_9
+          layout_properties: {grid_position: 'GWZHWE,GNCBIL'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#9C89FF',
+            visible: true, text: '', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_12
+          layout_properties: {grid_position: 'GWZHWE,LUDQGF'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#7E38B7',
+            visible: true, text: '3 Years: ', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_10
+          layout_properties: {grid_position: 'ZJJMNP,TQIEBM'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#7E38B7',
+            visible: true, text: '', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_13
+          layout_properties: {grid_position: 'ZJJMNP,AYDIJS'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#541675',
+            visible: true, text: '5 Years:', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_11
+          layout_properties: {grid_position: 'EPHNLO,COATZI'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#541675',
+            visible: true, text: '', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_14
+          layout_properties: {grid_position: 'EPHNLO,LZPPYU'}
+      - type: Button
+        properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
+          foreground: '#347893', visible: false, text: Hide Yearly Spending, font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '', bold: false, underline: false, icon: ''}
+        name: yearly_hide
+        layout_properties: {grid_position: 'DMGAAX,SESXZJ'}
+        event_bindings: {click: yearly_hide_click}
+    - type: ColumnPanel
+      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+        spacing_below: small, background: ''}
+      name: card_1_copy
+      layout_properties: {grid_position: 'JNXKGH,VWPKDW'}
+      components:
+      - type: Label
+        properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '#69A6D1',
+          visible: true, text: Your Monthly Spending, font_size: null, font: '', spacing_above: small,
+          icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+          underline: false, icon: ''}
+        name: label_1_copy
+        layout_properties: {grid_position: 'MZREGS,KIUGSE'}
+      - type: Plot
+        properties: {spacing_above: small, spacing_below: small, height: '300', visible: true,
+          tooltip: '', interactive: true}
+        name: plot_2
+        layout_properties: {grid_position: 'JMZMUP,BPAMOS'}
+      - type: ColumnPanel
+        properties: {role: card, col_widths: '{}'}
+        name: card_6
+        layout_properties: {grid_position: 'JMZMUP,VDCFEI TMFGFD,VEBYEV'}
+        components:
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+            visible: true, text: 'Your Total Saving This Month:', font_size: null,
+            font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '', bold: false, underline: false, icon: ''}
+          name: label_2_copy
+          layout_properties: {grid_position: 'SLUGYQ,TDRHQP'}
+        - type: Label
+          properties: {}
+          name: label_3_copy
+          layout_properties: {grid_position: 'BHDMXI,UQVMFX'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#355C7D',
+            visible: true, text: '', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_16
+          layout_properties: {grid_position: 'QQZQQO,STXCQE'}
+      - type: ColumnPanel
+        properties: {role: card, col_widths: '{}'}
+        name: card_7
+        layout_properties: {grid_position: 'JMZMUP,VDCFEI XOMEGE,CNLKAM'}
+        components:
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+            visible: true, text: 'Average Spent Per Day:', font_size: null, font: '',
+            spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+            background: '', bold: false, underline: false, icon: ''}
+          name: label_4
+          layout_properties: {grid_position: 'RUZEBD,ELEYXV'}
+        - type: Label
+          properties: {}
+          name: label_5
+          layout_properties: {grid_position: 'YIMTLF,SOTDFR'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#355C7D',
+            visible: true, text: '', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_8_copy
+          layout_properties: {grid_position: 'BMLLGU,DICAIG'}
+      - type: ColumnPanel
+        properties: {role: card, col_widths: '{}'}
+        name: card_3_copy
+        layout_properties:
+          col_widths: {}
+          grid_position: KXRJJG,PUOVIW
+        components:
+        - type: Label
+          properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '#69A6D1',
+            visible: true, text: Predictions and Insights, font_size: null, font: '',
+            spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+            background: '', bold: true, underline: false, icon: ''}
+          name: label_15_copy
+          layout_properties: {grid_position: 'POPBDV,VCACBO'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#355C7D',
+            visible: true, text: 'At this rate, here''s what your net-worth will be
+              in:', font_size: null, font: '', spacing_above: small, icon_align: left,
+            spacing_below: small, italic: false, background: '', bold: false, underline: false,
+            icon: ''}
+          name: label_20
+          layout_properties: {grid_position: 'AHQPER,QPOAKM'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#9C89FF',
+            visible: true, text: 3 Months, font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_17
+          layout_properties: {grid_position: 'GLBRMB,JVHEYD'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#9C89FF',
+            visible: true, text: '', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_21
+          layout_properties: {grid_position: 'GLBRMB,GDQUGI'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#7E38B7',
+            visible: true, text: 6 Months, font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_18
+          layout_properties: {grid_position: 'DHTWKQ,CIATXO'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#7E38B7',
+            visible: true, text: '', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_22
+          layout_properties: {grid_position: 'DHTWKQ,QOGQWO'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#541675',
+            visible: true, text: 9 Months, font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_19
+          layout_properties: {grid_position: 'XJKNBJ,EOWRFT'}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '#541675',
+            visible: true, text: '', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_23
+          layout_properties: {grid_position: 'XJKNBJ,RWOLNC'}
+      - type: Button
+        properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
+          foreground: '#347893', visible: false, text: Hide Monthly Spending, font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '', bold: false, underline: false, icon: ''}
+        name: monthly_hide
+        layout_properties: {grid_position: 'CRZKVO,AUWYHO'}
+        event_bindings: {click: monthly_hide_click}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
